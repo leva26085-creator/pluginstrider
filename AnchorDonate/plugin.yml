@@ -1,0 +1,11 @@
+name: AnchorDonate
+version: '1.3.0'
+main: dev.anchordonate.AnchorDonate
+api-version: '1.21.11'
+depend: [AnchorEconomy, AnchorPresentation, AnchorRoles]
+softdepend: [AnchorHubNPC, AnchorRegister]
+commands:
+  donate:
+    description: Открыть меню сервера, косметики и магазина.
+    aliases: [menu]
+    usage: /donate

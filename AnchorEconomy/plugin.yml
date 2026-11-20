@@ -1,0 +1,12 @@
+name: AnchorEconomy
+version: '1.2.0'
+main: dev.anchoreconomy.AnchorEconomy
+api-version: '1.21.11'
+softdepend: [AnchorRegister]
+commands:
+  sapphires:
+    aliases: [sap, сапфиры]
+    description: Баланс сапфиров.
+permissions:
+  anchor.economy.admin:
+    default: op

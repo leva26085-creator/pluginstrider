@@ -1,0 +1,32 @@
+name: AnchorRegister
+version: '1.9.1'
+main: dev.anchorregister.AnchorRegister
+api-version: '1.21.11'
+load: POSTWORLD
+description: Регистрация, вход и проверка игрока в отдельном лобби.
+commands:
+  smp:
+    description: Перейти в ѕᴍᴘ.
+    usage: /smp
+  hub:
+    description: Перейти в хаб.
+    usage: /hub
+  register:
+    description: Зарегистрировать свой ник.
+    aliases: [reg]
+    usage: /reg (пароль) (повтор)
+  login:
+    description: Войти в свой аккаунт.
+    usage: /login (пароль)
+  captcha:
+    description: Открыть проверку игрока.
+    usage: /captcha
+
+  regedit:
+    description: Редактирование комнаты регистрации оператором.
+    usage: /regedit on|save|off
+    permission: anchor.register.editor
+    permission-message: Эта команда доступна только оператору.
+permissions:
+  anchor.register.editor:
+    default: op

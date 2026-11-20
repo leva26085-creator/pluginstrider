@@ -1,0 +1,3 @@
+lobby:
+  enabled: true
+  maximum-mistakes: 3
